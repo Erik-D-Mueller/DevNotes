@@ -2,12 +2,12 @@
 {\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\froman\fcharset0 Times-Roman;\f2\fswiss\fcharset0 Arial-BoldMT;
 \f3\froman\fcharset0 TimesNewRomanPSMT;}
 {\colortbl;\red255\green255\blue255;\red26\green26\blue26;\red255\green255\blue255;\red0\green0\blue0;
-\red16\green60\blue192;\red38\green38\blue38;}
+\red16\green60\blue192;\red89\green89\blue89;\red38\green38\blue38;}
 {\*\expandedcolortbl;;\cssrgb\c13333\c13333\c13333;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;
-\cssrgb\c6667\c33333\c80000;\cssrgb\c20000\c20000\c20000;}
+\cssrgb\c6667\c33333\c80000;\cssrgb\c42353\c42353\c42353;\cssrgb\c20000\c20000\c20000;}
 {\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
 {\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
-\margl1440\margr1440\vieww15700\viewh15000\viewkind0
+\margl1440\margr1440\vieww18360\viewh15000\viewkind0
 \deftab720
 \pard\pardeftab720\sl400\partightenfactor0
 
@@ -77,7 +77,11 @@
 \f1 \cf4 \strokec4 \
 \pard\pardeftab720\sl320\partightenfactor0
 \cf4 \'a0\
-\'a0\
+\'a0\cf4 \cb3 \outl0\strokewidth0 \
+\pard\pardeftab720\sl320\partightenfactor0
+\cf4 Javascript is technically called ECMAscript. So ES15 is javscript2015.\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf4 \cb3 \outl0\strokewidth0 \strokec4 \
 \'a0\
 \pard\pardeftab720\sl400\partightenfactor0
 
@@ -118,8 +122,7 @@ DOM for document object model which is the cross platform api that assembles and
 Type \'93node\'94 in the command line to open the REPL environment for node. Read, evaluate, print, loop.\
 Exit it with \'93ctrl c\'94 twice.\
 \
-
-\fs28 We can make a file, with a .js at the end, open it with an editor like sublime or visual studio, write all the javascript inside of it that we want, then we can go back to the command-line window and write \'93node ____.js\'94 with the name of the file where the underline part is, and that will run that file from the command line.\
+We can make a file, with a .js at the end, open it with an editor like sublime or visual studio, write all the javascript inside of it that we want, then we can go back to the command-line window and write \'93node ____.js\'94 with the name of the file where the underline part is, and that will run that file from the command line.\
 \'a0\
 I need to know the exact technical words for all of the parts of a method including the method signature and all the other little parts.\
 \
@@ -127,7 +130,37 @@ A node program needs a javascript file to execute and a package.json file.\
 \
 To make a very very basic web server:\
 \
-With something like php, you make the php file then upload it to the server and the server takes care of the requests and everything.  With NODE it is different.\
+With something like php, you make the php file then upload it to the server and the server takes care of the requests and everything.  With NODE it is different, you have to more like create your own server.\
+\
+ES2015 uses CONST instead of VAR.  \
+\
+We can have up to 65535 TCP ports and 65535 UDP ports.\
+\
+\'93
+\f0\fs36 \cf6 \strokec6 TCP/IP specifies how data is exchanged over the internet by providing end-to-end communications that identify how it should be broken into packets, addressed, transmitted, routed and received at the destination. TCP/IP requires little central management, and it is designed to make networks reliable, with the ability to recover automatically from the failure of any device on the network.\'94
+\f1\fs32 \cf4 \strokec4 \
+\
+\
+Look at const vs var vs let.\
+\
+A \'93core module\'94 means it is included in the system by default, hence \'93core\'94.\
+\
+Here is a super simple node.js server:\
+\
+> const http = require(\'91http\'92);    // This includes the core-module http\
+> const hostname = \'91127.0.0.1\'92;  // This is the loop-back address since we are working on our local host for this example\
+> const port = 3000\
+\
+\
+\
+
+\fs28 \
+\
+\
+\
+\
+\
+\
 \
 \
 \
@@ -162,27 +195,27 @@ With something like php, you make the php file then upload it to the server and 
 \f1\fs24 \cf4 \strokec4 \
 \pard\pardeftab720\li560\sl360\partightenfactor0
 
-\f0\fs26\fsmilli13333 \cf6 \strokec6 \'b7
+\f0\fs26\fsmilli13333 \cf7 \strokec7 \'b7
 \f3\fs18\fsmilli9333  \'a0\'a0\'a0\'a0\'a0\'a0
 \f0\fs29\fsmilli14667 \cf2 \strokec2 Work on full-stack development (UI, business logic, persistence, etc.)
 \f1\fs24 \cf4 \strokec4 \
 
-\f0\fs26\fsmilli13333 \cf6 \strokec6 \'b7
+\f0\fs26\fsmilli13333 \cf7 \strokec7 \'b7
 \f3\fs18\fsmilli9333  \'a0\'a0\'a0\'a0\'a0\'a0
 \f0\fs29\fsmilli14667 \cf2 \strokec2 Have strong focus on usability, scalability, security, and availability
 \f1\fs24 \cf4 \strokec4 \
 
-\f0\fs26\fsmilli13333 \cf6 \strokec6 \'b7
+\f0\fs26\fsmilli13333 \cf7 \strokec7 \'b7
 \f3\fs18\fsmilli9333  \'a0\'a0\'a0\'a0\'a0\'a0
 \f0\fs29\fsmilli14667 \cf2 \strokec2 Demonstrate strong technical, business, and methodological leadership
 \f1\fs24 \cf4 \strokec4 \
 
-\f0\fs26\fsmilli13333 \cf6 \strokec6 \'b7
+\f0\fs26\fsmilli13333 \cf7 \strokec7 \'b7
 \f3\fs18\fsmilli9333  \'a0\'a0\'a0\'a0\'a0\'a0
 \f0\fs29\fsmilli14667 \cf2 \strokec2 Internalize business requirements and solve them with beautifully engineered solutions
 \f1\fs24 \cf4 \strokec4 \
 
-\f0\fs26\fsmilli13333 \cf6 \strokec6 \'b7
+\f0\fs26\fsmilli13333 \cf7 \strokec7 \'b7
 \f3\fs18\fsmilli9333  \'a0\'a0\'a0\'a0\'a0\'a0
 \f0\fs29\fsmilli14667 \cf2 \strokec2 Take initiatives and drive topics to resolution
 \f1\fs24 \cf4 \strokec4 \
@@ -192,27 +225,27 @@ With something like php, you make the php file then upload it to the server and 
 \f1\b0\fs24 \cf4 \strokec4 \
 \pard\pardeftab720\li560\sl360\partightenfactor0
 
-\f0\fs26\fsmilli13333 \cf6 \strokec6 \'b7
+\f0\fs26\fsmilli13333 \cf7 \strokec7 \'b7
 \f3\fs18\fsmilli9333  \'a0\'a0\'a0\'a0\'a0\'a0
 \f0\fs29\fsmilli14667 \cf2 \strokec2 Build and deliver Supply Chain Collaboration features using Agile and Scrum development methodologies
 \f1\fs24 \cf4 \strokec4 \
 
-\f0\fs26\fsmilli13333 \cf6 \strokec6 \'b7
+\f0\fs26\fsmilli13333 \cf7 \strokec7 \'b7
 \f3\fs18\fsmilli9333  \'a0\'a0\'a0\'a0\'a0\'a0
 \f0\fs29\fsmilli14667 \cf2 \strokec2 Participate in each stage of the Software Development Lifecycle (analyze, design, implement, test, deploy and maintain) and take full ownership and responsibility of your work
 \f1\fs24 \cf4 \strokec4 \
 
-\f0\fs26\fsmilli13333 \cf6 \strokec6 \'b7
+\f0\fs26\fsmilli13333 \cf7 \strokec7 \'b7
 \f3\fs18\fsmilli9333  \'a0\'a0\'a0\'a0\'a0\'a0
 \f0\fs29\fsmilli14667 \cf2 \strokec2 Work collaboratively with cross-functional team members in different time zones
 \f1\fs24 \cf4 \strokec4 \
 
-\f0\fs26\fsmilli13333 \cf6 \strokec6 \'b7
+\f0\fs26\fsmilli13333 \cf7 \strokec7 \'b7
 \f3\fs18\fsmilli9333  \'a0\'a0\'a0\'a0\'a0\'a0
 \f0\fs29\fsmilli14667 \cf2 \strokec2 Participate/Perform requirement reviews, design reviews, peer code-reviews, etc.
 \f1\fs24 \cf4 \strokec4 \
 
-\f0\fs26\fsmilli13333 \cf6 \strokec6 \'b7
+\f0\fs26\fsmilli13333 \cf7 \strokec7 \'b7
 \f3\fs18\fsmilli9333  \'a0\'a0\'a0\'a0\'a0\'a0
 \f0\fs29\fsmilli14667 \cf2 \strokec2 Troubleshoot and resolve production issues on demand
 \f1\fs24 \cf4 \strokec4 \
@@ -226,32 +259,32 @@ With something like php, you make the php file then upload it to the server and 
 \'a0\
 \pard\pardeftab720\li560\sl360\partightenfactor0
 
-\f0\fs26\fsmilli13333 \cf6 \strokec6 \'b7
+\f0\fs26\fsmilli13333 \cf7 \strokec7 \'b7
 \f3\fs18\fsmilli9333  \'a0\'a0\'a0\'a0\'a0\'a0
 \f0\fs29\fsmilli14667 \cf2 \strokec2 Bachelor's in computer science or engineering, Master\'92s preferred
 \f1\fs24 \cf4 \strokec4 \
 
-\f0\fs26\fsmilli13333 \cf6 \strokec6 \'b7
+\f0\fs26\fsmilli13333 \cf7 \strokec7 \'b7
 \f3\fs18\fsmilli9333  \'a0\'a0\'a0\'a0\'a0\'a0
 \f0\fs29\fsmilli14667 \cf2 \strokec2 3+ years of development experience developing and maintaining production grade software
 \f1\fs24 \cf4 \strokec4 \
 
-\f0\fs26\fsmilli13333 \cf6 \strokec6 \'b7
+\f0\fs26\fsmilli13333 \cf7 \strokec7 \'b7
 \f3\fs18\fsmilli9333  \'a0\'a0\'a0\'a0\'a0\'a0
 \f0\fs29\fsmilli14667 \cf2 \strokec2 1+ years working on cloud-based or on-demand software solutions
 \f1\fs24 \cf4 \strokec4 \
 
-\f0\fs26\fsmilli13333 \cf6 \strokec6 \'b7
+\f0\fs26\fsmilli13333 \cf7 \strokec7 \'b7
 \f3\fs18\fsmilli9333  \'a0\'a0\'a0\'a0
 \f1\fs24 \cf4 \strokec4 \
 \pard\pardeftab720\li560\fi400\sl240\partightenfactor0
 
-\f3\fs18\fsmilli9333 \cf6 \strokec6  
+\f3\fs18\fsmilli9333 \cf7 \strokec7  
 \f0\fs29\fsmilli14667 \cf2 \strokec2 Excellent Java and SQL skills
 \f1\fs24 \cf4 \strokec4 \
 \pard\pardeftab720\li560\sl360\partightenfactor0
 
-\f0\fs26\fsmilli13333 \cf6 \strokec6 \'b7
+\f0\fs26\fsmilli13333 \cf7 \strokec7 \'b7
 \f3\fs18\fsmilli9333  \'a0\'a0\'a0\'a0\'a0\'a0
 \f0\fs29\fsmilli14667 \cf2 \strokec2 Excellent verbal and written communication skills in English
 \f1\fs24 \cf4 \strokec4 \
@@ -259,7 +292,7 @@ With something like php, you make the php file then upload it to the server and 
 \cf4 \'a0\
 \pard\pardeftab720\li560\sl360\partightenfactor0
 
-\f0\fs26\fsmilli13333 \cf6 \strokec6 \'b7
+\f0\fs26\fsmilli13333 \cf7 \strokec7 \'b7
 \f3\fs18\fsmilli9333  \'a0\'a0\'a0\'a0\'a0\'a0
 \f0\fs29\fsmilli14667 \cf2 \strokec2 Experience with Angular, Node.js, REST, Spring Boot, Maven, GitHub
 \f1\fs24 \cf4 \strokec4 \
@@ -267,12 +300,12 @@ With something like php, you make the php file then upload it to the server and 
 \cf4 \'a0\
 \pard\pardeftab720\li560\sl360\partightenfactor0
 
-\f0\fs26\fsmilli13333 \cf6 \strokec6 \'b7
+\f0\fs26\fsmilli13333 \cf7 \strokec7 \'b7
 \f3\fs18\fsmilli9333  \'a0\'a0\'a0\'a0\'a0\'a0
 \f0\fs29\fsmilli14667 \cf2 \strokec2 Experience with SAP products and technologies such as ECC and HANA a plus but not required
 \f1\fs24 \cf4 \strokec4 \
 
-\f0\fs26\fsmilli13333 \cf6 \strokec6 \'b7
+\f0\fs26\fsmilli13333 \cf7 \strokec7 \'b7
 \f3\fs18\fsmilli9333  \'a0\'a0\'a0\'a0\'a0\'a0
 \f0\fs29\fsmilli14667 \cf2 \strokec2 Must be able to work onsite in Palo Alto, CA
 \f1\fs24 \cf4 \strokec4 \
@@ -483,7 +516,7 @@ With something like php, you make the php file then upload it to the server and 
 \pard\pardeftab720\li560\sl400\partightenfactor0
 
 \f0\fs29\fsmilli14667 \cf2 \strokec2 2
-\f3\fs18\fsmilli9333 \cf6 \strokec6  \'a0
+\f3\fs18\fsmilli9333 \cf7 \strokec7  \'a0
 \f0\fs29\fsmilli14667 \cf2 \strokec2 ECC and HANA
 \f1\fs24 \cf4 \strokec4 \
 \pard\pardeftab720\li560\sl320\partightenfactor0
