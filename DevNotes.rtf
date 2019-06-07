@@ -137,7 +137,11 @@ ES2015 uses CONST instead of VAR.  \
 We can have up to 65535 TCP ports and 65535 UDP ports.\
 \
 \'93
-\f0\fs36 \cf6 \strokec6 TCP/IP specifies how data is exchanged over the internet by providing end-to-end communications that identify how it should be broken into packets, addressed, transmitted, routed and received at the destination. TCP/IP requires little central management, and it is designed to make networks reliable, with the ability to recover automatically from the failure of any device on the network.\'94
+\f0\fs36 \cf6 \strokec6 TCP/IP specifies how data is exchanged over the internet by providing end-to-end communications that identify how it should be broken into packets, addressed, transmitted, routed and received at the destination. TCP/IP requires little central management, and it is designed to make networks reliable, with the ability to recover automatically from the failure of any device on the network.\'94\
+\
+TCP is transmission control protocol.\
+\
+IP for internet protocol defines how to address and route each packet, TCP defines everything else.
 \f1\fs32 \cf4 \strokec4 \
 \
 \
@@ -150,6 +154,9 @@ Here is a super simple node.js server:\
 > const http = require(\'91http\'92);    // This includes the core-module http\
 > const hostname = \'91127.0.0.1\'92;  // This is the loop-back address since we are working on our local host for this example\
 > const port = 3000\
+\
+\
+\
 \
 \
 \
