@@ -1,0 +1,99 @@
+12:45pm Friday, starting on Node.js and Angular++++++++
+https://www.youtube.com/watch?v=U8XF6AFGqlc
+Paypal, Uber, Walmart, Netflix use Node.js
+ 
+(Spent 15 mins replying to Melanie Gulliver)
+ 
+ 
+ 
+Apache makes a new thread for each client request and eventually maxxes out the memory.  It operates synchronously.
+ 
+ 
+Node.js
+Single thread, non-blocking, held in event loop.
+Node.js uses a single thread for 10s of thousands of requests and is asynchronous.  Other technologies like Apache and PHP use one thread for each request and operate synchronously.
+ 
+NODE.js is used extensively for REST apis, all the http 
+ 
+This developer has another video just for building REST apis with node.
+ 
+NODE.js is good for anything that is not cpu intensive.
+ 
+NPM installs modules into the Node modules folder
+-g will install it globally so that it can be accessed from other application.
+ 
+ 
+Javascript is technically called ECMAscript. So ES15 is javscript2015.
+
+ 
+Popular Modules: 
+ 
+Express - complete web development framework
+Connect - extensive http server framework, baseline for express
+Pug / jade which is a template engine and is the default for Express.
+ 
+There are thousands of modules for node that can be installed, usually they are installed in the modules file.
+
+If you use the -g flag when installing a package, then it makes it accessible globally on your computer…
+
+package.json goes in the root of a node application and has all the pertinent details.
+
+“Main” in the package.json file tells node where to begin execution.
+
+We can write the package.json file manually or we can use “npm init” and it will ask us some questions and then create
+it for us.
+
+An asterisk, in place of a version number simply means “most up to date”.
+
+LTS is for long term support.
+ 
+
+DOM for document object model which is the cross platform api that assembles and displays the website based on the html, css and js files.
+
+Type “node” in the command line to open the REPL environment for node. Read, evaluate, print, loop.
+Exit it with “ctrl c” twice.
+
+We can make a file, with a .js at the end, open it with an editor like sublime or visual studio, write all the javascript inside of it that we want, then we can go back to the command-line window and write “node ____.js” with the name of the file where the underline part is, and that will run that file from the command line.
+ 
+I need to know the exact technical words for all of the parts of a method including the method signature and all the other little parts.
+
+A node program needs a javascript file to execute and a package.json file.
+
+To make a very very basic web server:
+
+With something like php, you make the php file then upload it to the server and the server takes care of the requests and everything.  With NODE it is different, you have to more like create your own server.
+
+ES2015 uses CONST instead of VAR.  
+
+We can have up to 65535 TCP ports and 65535 UDP ports.
+
+“TCP/IP specifies how data is exchanged over the internet by providing end-to-end communications that identify how it should be broken into packets, addressed, transmitted, routed and received at the destination. TCP/IP requires little central management, and it is designed to make networks reliable, with the ability to recover automatically from the failure of any device on the network.”
+
+TCP is transmission control protocol.
+
+IP for internet protocol defines how to address and route each packet, TCP defines everything else.
+
+
+Look at const vs var vs let.
+
+A “core module” means it is included in the system by default, hence “core”.
+
+Here is a super simple node.js server:
+
+> const http = require(‘http’);    // This includes the core-module http
+> const hostname = ‘127.0.0.1’;  // This is the loop-back address since we are working on our local host for this example
+> const port = 3000;  // define a port
+> const server = http.createServer(req, res) => {   
+
+ // define a variable called server.  We could do http.createServer(function(requestResponse) but that would be old school we are going to use an arrow function instead.
+//So we now have access to the two objets, request and response. 
+
+res.statusCode=200;  //We want to set a status code.  200 is the status code that says that everything is ok.
+
+
+
+res.//We want to set a header and set the content type in the header.
+
+
+
+});     
