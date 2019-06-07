@@ -4,6 +4,7 @@
 
 
 It is 4:31pm and I have learned a ton about node.js, http request, javascript and git, I'm going to pause to eat.
+4:51pm, back to expanding my knowledge cloud!
 
 https://www.youtube.com/watch?v=U8XF6AFGqlc
 Paypal, Uber, Walmart, Netflix use Node.js
@@ -149,5 +150,16 @@ branch of the remote repo and it tells the remote repo to record any changes to 
 
 SVN is the apache open source version control system like GIT.  SVN is rather "old school".
 SVN is centralized, GIT is decentralized.  Branching and merging on SVN are far more work.
+
+SVN only has one single repository, which is the central one.  Individual developers can make branches and work on
+them, but they cannot save different versions or make commits or anything without connecting to the central
+repository.  They essentially have a local copy of the file that they're working at and that's basically it.
+
+With GIT, it is decentralized, in that every single developer has their entire own repository, so they
+can track their changes and commits on their local repository, even if they don't have internet
+access and are never connected to anything else.  With SVN, for subversion, if a developer is 
+disconnected from the grid, and they want to have different versions of their code while they're working
+they literally have to copy and paste the files, as opposed to it being built into the version control
+they way that it is with git.
 
 
