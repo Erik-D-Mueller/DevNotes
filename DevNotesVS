@@ -1,4 +1,10 @@
 12:45pm Friday, starting on Node.js and Angular++++++++
+
+
+
+
+It is 4:31pm and I have learned a ton about node.js, http request, javascript and git, I'm going to pause to eat.
+
 https://www.youtube.com/watch?v=U8XF6AFGqlc
 Paypal, Uber, Walmart, Netflix use Node.js
  
@@ -88,12 +94,60 @@ Here is a super simple node.js server:
  // define a variable called server.  We could do http.createServer(function(requestResponse) but that would be old school we are going to use an arrow function instead.
 //So we now have access to the two objets, request and response. 
 
-res.statusCode=200;  //We want to set a status code.  200 is the status code that says that everything is ok.
+>res.statusCode=200;  //We want to set a status code.  200 is the status code that says that everything is ok.
+
+> res.setHeader('content-type', 'text/plain');  //We want to set a header and set the content type in the header.
+
+ // The documentation for the http module will show us all of this stuff.
+
+>res.end('Hello World!');  //  This will get outputed to the browser.
+>server.listen(port, hostname, ()=> );
 
 
-
-res.//We want to set a header and set the content type in the header.
 
 
 
 });     
+
+
+There are indeed a bunch of GUIs for fixing a merge conflict, but here is a simply way to do it manually:
+How to manually fix a merge conflict, by manually reading a merge conflicted file and fixing it.
+
+
+
+
+"git pull" is used to fetch content from a remote repo and bring it back to your local computer repo and immediatley update your local repo.  It assumes that the remote is the "correct, up to date one".
+
+
+
+
+There is a large horde of JSON APIs on github under the username "toddmotto" and the repo name "public-apis".
+
+If there are 4 developers working on a project and there is one central repo on a server, that centralrepo
+on the server is what we call the "remote repository".
+
+There is no absolute "upstream" or "downstream" with Git, it's relative, but if 4 people are all pulling and pushing from a central repo
+on a server, then they are "downstream" when they pull the code from the central server onto their local computer,
+and they are pushing the code "upstream" when they send the changes back to the server.
+
+As if the central server repo is like a water source and the creeks flow outward to each of the
+four developers.  It's all relative though, there is no absolute definition.
+
+Git FETCH downloads all the changes from the remote repository onto the person local machine,
+but it doesn't force them to merge and accept the changes.  It just downloads them so that
+the developer can look at them.  
+
+Git PUSH pushes your local repo and its changes to the remote repo.
+
+GIT Branch is when we want to branch off, like make a copy, so that we can fiddle around and make changes without damaging the original source code, incase we decide
+that we don't like the changes that we made and we want to keep the original code.
+
+Working directory is the folder that contains the git folder.
+
+Git checkout is how a developer switches which branch of the remote repo they are working on.  It changes their local repo to match that
+branch of the remote repo and it tells the remote repo to record any changes to the checkout branch until the developer "is done" with that branch.
+
+SVN is the apache open source version control system like GIT.  SVN is rather "old school".
+SVN is centralized, GIT is decentralized.  Branching and merging on SVN are far more work.
+
+
