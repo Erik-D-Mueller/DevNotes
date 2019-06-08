@@ -102,7 +102,15 @@ Here is a super simple node.js server:
  // The documentation for the http module will show us all of this stuff.
 
 >res.end('Hello World!');  //  This will get outputed to the browser.
->server.listen(port, hostname, ()=> );
+>server.listen(port, hostname, ()=> );     // The arrow  => is some sort of shortcut instead of writing the word "function", came out in ES6.
+
+console.log('Server started on  port ' +port);
+
+If we open a terminal and run this program we just made, it will give a blinking cursor, which means that it's running.
+
+
+
+
 
 
 
@@ -115,6 +123,14 @@ There are indeed a bunch of GUIs for fixing a merge conflict, but here is a simp
 How to manually fix a merge conflict, by manually reading a merge conflicted file and fixing it.
 
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+How to fix merge conflicts manually:
+
+https://www.youtube.com/watch?v=g8BRcB9NLp4
+
+Information on GIT and SVN which is an older version control system, open source, by apache, decentralized, a lot
+more work to do branches and fix merge conflicts.
 
 
 "git pull" is used to fetch content from a remote repo and bring it back to your local computer repo and immediatley update your local repo.  It assumes that the remote is the "correct, up to date one".
@@ -162,4 +178,27 @@ disconnected from the grid, and they want to have different versions of their co
 they literally have to copy and paste the files, as opposed to it being built into the version control
 they way that it is with git.
 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+In javascript, an expression is any valid set of literals, variables, operators, and expressions that evaluates to a single value. 
+The value may be a number, a string, or a logical value. Conceptually, there are two types of expressions: those that assign a 
+value to a variable, and those that simply have a value.
+
+With functions in javascript, you can make them the regular 
+way with the function declaration, aka function statement, aka function keyword:
+
+function calcRectArea(width, height) {
+  return width * height;
+}
+
+OR you can use the function constructor, denoted by the capital-f "Function" paired with a function expression:
+
+var sum = new Function('a', 'b', 'return a + b');
+
+Calling the constructor directly can create functions dynamically, but they "execute in the global scope only", I'm not
+sure what that means.
+
+I could not get a clear understanding of dynamic functions other than that they can change themselves, or be swapped out at runtime
+and or sometimes related to needing to change themselves in relation to what browser the user is using.
 
