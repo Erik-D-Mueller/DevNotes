@@ -1,20 +1,26 @@
 12:45pm Friday, starting on Node.js and Angular++++++++
 
-
-
-
 It is 4:31pm and I have learned a ton about node.js, http request, javascript and git, I'm going to pause to eat.
 4:51pm, back to expanding my knowledge cloud!
+I studied until about 6:30pm.
+
+Today is Saturday, June 8th.  Starting to study at 1:54pm.
+
+
+
+
+
+
+
+
+
 
 https://www.youtube.com/watch?v=U8XF6AFGqlc
 Paypal, Uber, Walmart, Netflix use Node.js
  
 (Spent 15 mins replying to Melanie Gulliver)
  
- 
- 
 Apache makes a new thread for each client request and eventually maxxes out the memory.  It operates synchronously.
- 
  
 Node.js
 Single thread, non-blocking, held in event loop.
@@ -104,24 +110,16 @@ Here is a super simple node.js server:
 >res.end('Hello World!');  //  This will get outputed to the browser.
 >server.listen(port, hostname, ()=> );     // The arrow  => is some sort of shortcut instead of writing the word "function", came out in ES6.
 
-console.log('Server started on  port ' +port);
+console.log('Server started on  port ' + port);
 
 If we open a terminal and run this program we just made, it will give a blinking cursor, which means that it's running.
 
-
-
-
-
-
-
-
+He suggests that we check out the express.js crash course after this video.
 
 });     
 
-
 There are indeed a bunch of GUIs for fixing a merge conflict, but here is a simply way to do it manually:
 How to manually fix a merge conflict, by manually reading a merge conflicted file and fixing it.
-
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -132,11 +130,7 @@ https://www.youtube.com/watch?v=g8BRcB9NLp4
 Information on GIT and SVN which is an older version control system, open source, by apache, decentralized, a lot
 more work to do branches and fix merge conflicts.
 
-
 "git pull" is used to fetch content from a remote repo and bring it back to your local computer repo and immediatley update your local repo.  It assumes that the remote is the "correct, up to date one".
-
-
-
 
 There is a large horde of JSON APIs on github under the username "toddmotto" and the repo name "public-apis".
 
@@ -201,4 +195,4 @@ sure what that means.
 
 I could not get a clear understanding of dynamic functions other than that they can change themselves, or be swapped out at runtime
 and or sometimes related to needing to change themselves in relation to what browser the user is using.
-
+s
