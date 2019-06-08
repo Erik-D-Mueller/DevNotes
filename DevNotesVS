@@ -5,6 +5,21 @@ It is 4:31pm and I have learned a ton about node.js, http request, javascript an
 I studied until about 6:30pm.
 
 Today is Saturday, June 8th.  Starting to study at 1:54pm.
+Got sidetracked looking at facebook, reading articles and researching
+Charging scooters in San Francisco.
+Finally getting started at 3:24pm, beginning with a 1hr 15min video
+Crash course about node express framework.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -196,3 +211,35 @@ sure what that means.
 I could not get a clear understanding of dynamic functions other than that they can change themselves, or be swapped out at runtime
 and or sometimes related to needing to change themselves in relation to what browser the user is using.
 s
+
+
+++++++++++++++++++
+
+Node Express Framework crash course
+
+Express is a fast, unopinionated (low level) minimalist web framework for Node.js.  Unopinonated meaning you set things up however you want, you're not forced to do things in a specific way.
+
+Commonly used in connection with React or Angular.
+
+Commonly used with an API to interact with the front end.
+
+Views can indeed be rendered with Express directly, with plain html or a template
+Engine like handlebars or pug, there are a lot of options for the front end.
+
+Express makes building node-webapps about 100 times easier.
+
+Express is used with JSON serving APIs as well as back end applications to render pages on a server.
+
+COA, HappyJS and Adonis are other frameworks.  COA and HappyJS are similar, Adonis is much higher level, similar to Laravel for PHP, but because it is higher level, we don't have as much freedom.
+
+Express is by far the most popular Node Framework.
+
+
+
+
+
+
+
+
+
+
