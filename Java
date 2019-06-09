@@ -27,7 +27,8 @@ Queue
 
 
 Set is an interface that connects to the below three.
-Sets of any type do not allow duplicate keys.
+    Sets of any type do not allow duplicate keys.
+    Sets are not thread safe, they must be externally synchronized if they are used in a multithreading environment.
 
 
 
@@ -37,10 +38,13 @@ The below three are all implementations of the Set interface:
         Good for when you want to store unique objects but nothing else matters.
         O(1) for everything.
 
-    TreeSet - used for sorting
+    LinkedHashSet - Will maintain it's insertion order, hair slower than HashSet.  Still pretty much O(1).
 
 
-    LinkedHashSet - Will maintain it's insertion order
+
+    TreeSet - used for sorting, implemented using TreeMap.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Big O is analysis of an algorithms efficiency.
 Big O is in terms of input size N.
@@ -66,9 +70,11 @@ A constant time algorithm, the time stays the same as n goes to infinity, perhap
 is called "order 1", O(1).
 
 A linear time algorithm, i.e. it takes a certain period of time per element of n, so you just multiply by n to see how long it
-will take, that is called O(
+will take, that is called O(n).
 
 
+
+Big O measure how well a computer algorithm scales as the amount of input/load increases.
 
 
 
