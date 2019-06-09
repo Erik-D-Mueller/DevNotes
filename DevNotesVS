@@ -234,12 +234,61 @@ COA, HappyJS and Adonis are other frameworks.  COA and HappyJS are similar, Adon
 
 Express is by far the most popular Node Framework.
 
+=> is somehow used to replace the function word in EC6.
+
+
+Higher order array methods, foreach, map,filter.
+
+https://www.youtube.com/watch?v=L72fhGm1tfE
+5:15 in is when he shows the most basic script to start running express
+
+Express lets use store the "routers" in different files, which makes it
+Easier to work with, as opposed to other frameworks which apparently force you to put all the routers in the same file.
+
+Middleware has access to both the request properties and the response properties.
+
+Postman is an http client.
+
+The -y flag with nom init makes us not have to answer any questions.
+
+npm I express //installs express
+
+It gets added to the package.json file.
+
+
+
+/ is the route for the index page.
+
+
+
+function(requires){}  is the same thing as    (req, res) => {}
+
+
+
+Express comes with functionality to set a specific folder as the static folder, and that way we can just put an index.html file and all the other static resources in there and it will function as as static website.
+
+app.get('/', (req, res) => { // We use "app" to create a route, then we use the type of request it will handle, in this case a "get" request.
+
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+"Routing" refers to determining how an application responds to a client request.
 
 
 
 
 
+This is the code to simply serve static content from a folder from an express
+Server, in this case the folder would be called "public":
+
+app.get('/', (req, res) => { // We use "app" to create a route, then we use the type of request it will handle, in this case the folder is 'public" and index.html is the file that is the homepage.
+
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+ 25:35
 
 
+
+Middleware always takes in request, response, next
 
 
