@@ -1,0 +1,109 @@
+Java Built in Data Structures
+
+Array  "an ordered series or arrangement".
+A java array stores a fixed-size sequential collection of elements of the same type.
+
+In java, different types of objects cannot be stored in an array.  They only store the type of object that they were declared for.
+All arrays in java are dynamically allocated, which means that
+
+Arrays are objects in java, so we can use .length() on them.
+
+Size of an array must be specified by an int value, not a long or a short.
+
+
+Linked List
+
+
+
+Stack
+
+
+
+
+Queue
+
+
+
+
+
+Set is an interface that connects to the below three.
+Sets of any type do not allow duplicate keys.
+
+
+
+The below three are all implementations of the Set interface:
+
+    HashSet - general purpose lowest resource intensive set, internally uses a hashmap for storing objects.
+        Good for when you want to store unique objects but nothing else matters.
+        O(1) for everything.
+
+    TreeSet - used for sorting
+
+
+    LinkedHashSet - Will maintain it's insertion order
+
+Big O is analysis of an algorithms efficiency.
+Big O is in terms of input size N.
+It's independent of machine, because it's only in relation to itself.
+
+Worst case, best case, average case.
+
+Big O is like a limit that goes to infinity, so it ignores constants.
+
+5n is O(n) because it is linear regardless.
+
+Just like in limits, we pick the fastest growing element and look at that, and simply ignore everything tht grows slower, below
+is a list of their speeds, so we pick the one farthest tot he right on this lsit.
+
+O(1) < O(logn) < O(n) < O(nlogn) < O(n^2) < O(2^n) < O(2^n) < O(n!)
+
+It's called Big-O because the rate of growth of a function is also called it's "order", coined by Landau.
+
+O(1) is constant time, the time/resources required stays the actual same, regardless of how big n gets, 
+    usually this only applies to operations that don't involve n at all.
+
+A constant time algorithm, the time stays the same as n goes to infinity, perhaps because it doesn't even use n,
+is called "order 1", O(1).
+
+A linear time algorithm, i.e. it takes a certain period of time per element of n, so you just multiply by n to see how long it
+will take, that is called O(
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+++++++++++++++++++
+
+Other stuff to look up:
+
+primitive type vs reference type
+Java is only pass by value?
+
+
+class Car implements Vehicle{   // Where Person is the interface
+
+}
+class Crocodile estends Reptile {
+
+}
+
+
+"extends" is used to create a sub-class
+"implements" is used to implement an interface.
+
+
+
+
+class implements interface.
+(Child-class) extends (Parent-class)
