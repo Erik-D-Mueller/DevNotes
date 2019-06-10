@@ -1,0 +1,188 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fswiss\fcharset0 Arial-BoldMT;\f4\fswiss\fcharset0 Helvetica-Bold;\f5\fswiss\fcharset0 Helvetica-Oblique;
+\f6\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red255\green255\blue255;\red18\green139\blue2;
+\red27\green29\blue31;\red235\green236\blue237;\red27\green29\blue31;\red0\green0\blue0;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\cssrgb\c20000\c20000\c20000;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c60000\c0;
+\cssrgb\c14118\c15294\c16078;\cssrgb\c93725\c94118\c94510;\cssrgb\c14118\c15294\c16078;\cssrgb\c0\c0\c0\c84314;\cssrgb\c0\c0\c0;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid102\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid103\'02\'02.;}{\levelnumbers\'01;}\fi-360\li2160\lin2160 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\margl1440\margr1440\vieww30880\viewh15040\viewkind0
+\deftab720
+\pard\pardeftab720\sl360\sa220\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Bytecode is object-oriented programming (OOP) code compiled to run on a virtual machine (VM) instead of a central processing unit (CPU). The VM transforms program code into readable machine language for the CPU because\'a0\cf4 \ul \ulc4 \strokec4 platforms\cf2 \ulnone \strokec2 \'a0utilize different code interpretation techniques. A VM converts bytecode for platform interoperability, but bytecode is not platform-specific.\
+Bytecode is in a compiled Java\'a0\cf4 \ul \ulc4 \strokec4 programming\cf2 \ulnone \strokec2 \'a0language format and has the .class extension executed by Java Virtual Machine (JVM).\
+\pard\pardeftab720\sl360\sa100\partightenfactor0
+\cf2 This term is also known as\'a0\cf4 \ul \ulc4 \strokec4 portable\cf2 \ulnone \strokec2 \'a0code (p-code) and intermediate code.
+\fs32 \
+Certain programming languages like C and C++ require different platform compilers, such as those in\'a0\cf4 \ul \ulc4 \strokec4 Windows\cf2 \ulnone \strokec2 , Mac or Linux, which depend on hardware and CPU communication methods and require knowing ahead of time what type of computer it will be run on, so that it can be compiled just for that machine.  This is why there would be the windows version of a game and the Mac version of a game, and the 32 bit version of windows and the 64 bit version of windows.\
+\
+Bytecode does not require recompiling or changed code because VM enables programming for cross-platform code portability. The VM provider handles platform-specific language tasks.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 Android and Flash are two well-known programming languages utilizing bytecode for easy interoperability.\
+\
+\pard\pardeftab720\sl340\sa300\partightenfactor0
+
+\f1\fs30 \cf5 \strokec5 First, let's have a clear idea of the following terms\
+\pard\pardeftab720\sl300\sa300\partightenfactor0
+
+\f2\fs26 \cf5 \cb6 Javac
+\f1\fs30 \cb3 \'a0is Java Compiler -- Compiles your Java code into\'a0
+\f3\b Bytecode
+\f1\b0 \
+
+\f2\fs26 \cb6 JVM
+\f1\fs30 \cb3 \'a0is Java Virtual Machine -- Runs/ Interprets/ translates Bytecode into\'a0
+\f3\b Native Machine Code
+\f1\b0 \
+
+\f2\fs26 \cb6 JIT
+\f1\fs30 \cb3 \'a0is Just In Time Compiler -- Compiles the given bytecode instruction sequence to machine code at\'a0
+\f3\b runtime
+\f1\b0 \'a0before executing it natively. It's main purpose is to do heavy optimizations in performance.\
+\pard\pardeftab720\sl340\sa300\partightenfactor0
+
+\f3\b \cf5 So now, Let's find answers to your questions..
+\f1\b0 \
+1)
+\f2\fs26 \cb6 JVM: is it a compiler or an interpreter?
+\f1\fs30 \cb3 \'a0--\'a0
+\f3\b Ans:
+\f1\b0 \'a0Interpreter\
+2)
+\f2\fs26 \cb6 what about JIT compiler that exist inside the JVM?
+\f1\fs30 \cb3 \'a0--\'a0
+\f3\b Ans:
+\f1\b0 \'a0If you read this reply completely, you probably know it now\
+3)
+\f2\fs26 \cb6 what exactly is the JVM?
+\f1\fs30 \cb3 \'a0--\'a0
+\f3\b Ans:
+\f1\b0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\sa150\partightenfactor0
+\ls1\ilvl0\cf5 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 JVM is the java-virtual-machine that resides on your RAM\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 Its component,\'a0
+\f3\b Class loader
+\f1\b0 \'a0loads the\'a0
+\f2\fs26 \cb6 .class
+\f1\fs30 \cb3 \'a0file into the RAM\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 The\'a0
+\f3\b Byte code Verifier
+\f1\b0 \'a0component in JVM checks if there are any access restriction violations in your code. (This is one of the principle reasons why java is secure)\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\partightenfactor0
+\ls1\ilvl0\cf5 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 Next, the\'a0
+\f3\b Execution Engine
+\f1\b0 \'a0component converts the Bytecode into executable machine code\cb1 \
+\pard\pardeftab720\sl340\sa300\partightenfactor0
+\cf5 \cb3 Hope this helped you..\
+++++++++++++++++++++++++++++\cf7 \cb3 \outl0\strokewidth0 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+The JDK is Java Development Kit, everything needed to program java programs.\
+JRE is Java runtime environment, everything on the client computer, including the JVM but other files and things as well.\
+The JVM is java virtual machine, it\'92s the little engine that process the byte code. \
+The JVM, for Java Virtual machine, which executes the byte code, it can can accept bytecode, which means that the java program has already been compiled by the JAVAC for Java Compiler, or it can use the JIST compiler it has which stands for Just-in-time compiler, meaning that it turns the program in byte code momentarily before it is executed by the JVM.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl500\partightenfactor0
+\ls2\ilvl0
+\f4\b\fs32 \cf8 \cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec8 JDK
+\f0\b0 \'a0\'96\'a0
+\f4\b Java Development Kit
+\f0\b0 \'a0(in short JDK) is Kit which provides the environment to\'a0
+\f4\b develop and execute(run)
+\f0\b0 \'a0the Java program. JDK is a kit(or package) which includes two things\
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\sl500\partightenfactor0
+\ls2\ilvl2\cf8 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec8 Development Tools(to provide an environment to develop your java programs)\cb1 \
+\ls2\ilvl2\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec8 JRE (to execute your java program).\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl540\sa200\partightenfactor0
+\ls2\ilvl0
+\f4\b \cf8 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec8 Note :\'a0
+\f0\b0 JDK is only used by Java Developers.\cb1 \uc0\u8232 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl500\partightenfactor0
+\ls2\ilvl0
+\f4\b \cf8 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec8 JRE
+\f0\b0 \'a0\'96\'a0
+\f4\b Java Runtime Environment
+\f0\b0 \'a0(to say JRE) is an installation package which provides environment to\'a0
+\f4\b only run(not develop)
+\f0\b0 \'a0the java program(or application)onto your machine. JRE is only used by them who only wants to run the Java Programs i.e. end users of your system.\cb1 \
+\ls2\ilvl0
+\f4\b \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec8 JVM
+\f0\b0 \'a0\'96\'a0
+\f4\b Java Virtual machine
+\f0\b0 (JVM) is a very important part of both JDK and JRE because it is contained or inbuilt in both. Whatever Java program you run using JRE or JDK goes into JVM and JVM is responsible for\'a0
+\f4\b executing the java program line by line
+\f0\b0 \'a0hence it is also known as interpreter.\cb1 \
+\pard\pardeftab720\sl540\sa200\qc\partightenfactor0
+
+\f4\b \cf8 \cb3 How does JRE and JDK works?
+\f0\b0 \
+\pard\pardeftab720\sl540\sa200\partightenfactor0
+
+\f4\b \cf8 What does JRE consists of?
+\f0\b0 \cb1 \uc0\u8232 \cb3 JRE consists of the following components:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl500\partightenfactor0
+\ls3\ilvl0
+\f4\b \cf8 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec8 Deployment technologies
+\f0\b0 , including deployment, Java Web Start and Java Plug-in.\cb1 \
+\ls3\ilvl0
+\f4\b \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec8 User interface toolkits
+\f0\b0 , including\'a0
+\f5\i Abstract Window Toolkit (AWT), Swing, Java 2D, Accessibility, Image I/O, Print Service, Sound, drag and drop (DnD)
+\f0\i0 \'a0and\'a0
+\f5\i input methods
+\f0\i0 .\cb1 \
+\ls3\ilvl0
+\f4\b \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec8 Integration libraries
+\f0\b0 , including\'a0
+\f5\i Interface Definition Language (IDL), Java Database Connectivity (JDBC), Java Naming and Directory Interface (JNDI), Remote Method Invocation (RMI), Remote Method Invocation Over Internet Inter-Orb Protocol (RMI-IIOP)
+\f0\i0 \'a0and\'a0
+\f5\i scripting
+\f0\i0 .\cb1 \
+\ls3\ilvl0
+\f4\b \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec8 Other base libraries
+\f0\b0 , including\'a0
+\f5\i international support, input/output (I/O), extension mechanism, Beans, Java Management Extensions (JMX), Java Native Interface (JNI), Math, Networking, Override Mechanism, Security, Serialization
+\f0\i0 \'a0and\'a0
+\f5\i Java for XML Processing (XML JAXP)
+\f0\i0 .\cb1 \
+\ls3\ilvl0
+\f4\b \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec8 Lang and util base libraries
+\f0\b0 , including\'a0
+\f5\i lang and util, management, versioning, zip, instrument, reflection, Collections, Concurrency Utilities, Java Archive (JAR), Logging, Preferences API, Ref Objects
+\f0\i0 \'a0and\'a0
+\f5\i Regular Expressions
+\f0\i0 .\cb1 \
+\ls3\ilvl0
+\f4\b \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec8 Java Virtual Machine (JVM)
+\f0\b0 , including\'a0
+\f5\i Java HotSpot Client
+\f0\i0 \'a0and\'a0
+\f5\i Server Virtual Machines
+\f0\i0 .\cb1 \
+\pard\pardeftab720\sl340\sa300\partightenfactor0
+
+\f1\fs30 \cf7 \cb3 \outl0\strokewidth0 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6\fs24 \cf9 \cb1 \outl0\strokewidth0 \strokec9 }

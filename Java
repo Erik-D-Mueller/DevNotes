@@ -10,41 +10,190 @@ Arrays are objects in java, so we can use .length() on them.
 
 Size of an array must be specified by an int value, not a long or a short.
 
+------------------------------------------------------------------------------------------------------------A list is an ordered list of objects, where the same object may well appear more than once. For example: [1, 7, 1, 3, 1, 1, 1, 5]. It makes sense to talk about the "third element" in a list. You can add an element anywhere in the list, change an element anywhere in the list, or remove an element from any position in the list.
+COLLECTIONS:
 
-Linked List
+LIST
+A list is an ordered list of objects where the same object may well appear more than once. 
+For example: [1, 7, 1, 3, 1, 1, 1, 5]. It makes sense to talk about the "third element" in a list. 
+You can add an element anywhere in the list, change an element anywhere in the list, or remove an element 
+from any position in the list.  Each element has an index value associated with it.
+With a list, we can retrieve values through an iterator OR through the numerical index.
+
+QUEUE
+A queue is also ordered, but you'll only ever touch elements at one end. All elements get inserted at the "end"
+ and removed from the "beginning" (or head) of the queue. 
+ Queues are basically for getting elements in the right order before being further processed.
+ You can find out how many elements are in the queue, but you 
+ can't find out what, say, the "third" element is. You'll see it when you get there.
+ Only the 'head' aka 'next out' is available.  Retrieval is through peeking or polling or through iterator.
+
+SET
+A set is not ordered and cannot contain duplicates. Any given object either is or isn't in the set. {7, 5, 3, 1} is the 
+exact same set as {1, 7, 1, 3, 1, 1, 1, 5}. You again can't ask for the "third" element or even the "first" element, since 
+they are not in any particular order. You can add or remove elements, and you can find out if a certain element 
+exists (e.g., "is 7 in this set?")  Retrieval of values/elements is through an iterator.
 
 
 
-Stack
 
 
 
 
-Queue
+The collections framework comes from the Java.util package.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+MAP
+
+They map keys to values.  They cannot contain duplice keys, but they can indeed have duplicate values (answers) though.
+
+A Sorted-Map is a map that further provides a total ordering on its keys.
+A Navigable-Map is a sorted-map extended with navigation methods returning the closest matches for given search targets.
 
 
 
 
 
-Set is an interface that connects to the below three.
-    Sets of any type do not allow duplicate keys.
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+List:
+
+A list is an ordered list of objects where the same object may well appear more than once. 
+For example: [1, 7, 1, 3, 1, 1, 1, 5]. It makes sense to talk about the "third element" in a list. 
+You can add an element anywhere in the list, change an element anywhere in the list, or remove an element 
+from any position in the list.  Each element has an index value associated with it.
+With a list, we can retrieve values through an iterator OR through the numerical index.
+
+
+LinkedList implements is a doubly-linked list. 
+ArrayList implements is a dynamically re-sizing array.
+
+LinkedList<E> allows for constant-time insertions or removals using iterators, but only sequential
+ access of elements. In other words, you can walk the list forwards or backwards, but finding a
+ position in the list takes time proportional to the size of the list. Javadoc says "operations that
+ index into the list will traverse the list from the beginning or the end, whichever is closer", so those
+ methods are O(n) (n/4 steps) on average, though O(1) for index = 0.
+
+ArrayList<E>, on the other hand, allow fast random read access, so you can grab any element in constant time. 
+But adding or removing from anywhere but the end requires shifting all the latter elements over, either to 
+make an opening or fill the gap. Also, if you add more elements than the capacity of the underlying array, 
+a new array (1.5 times the size) is allocated, and the old array is copied to the new one, so adding to an 
+ArrayList is O(n) in the worst case but constant on average.
+
+------------------------------------------------------------------------------------------------------------
+
+
+A Queue in Java, is like a line for a movie.  Elements are inserted at the end and removed from the beginning.
+    All queues must follows FIFO, but that is pretty much the only overall concrete rule.
+    
+    "It is an ordered list of objects with its use limited to insert elements at the end of the list
+    and deleting elements from the start of list i.e. it follows the FIFO or the First-In-First-Out principle." GeeksforGeeks
+
+
+
+
+
+
+
+PriorityQueue in Java is a special type of queue where in all 
+    the elements are ordered as per their natural ordering OR based on 
+    a custom Comparator supplied at the time of creation.  
+    It can indeed have duplicate values, unlike the TreeSet.
+
+    The front of the Priority queue contains the least element according 
+    to the specified ordering, and the rear of the priority queue 
+    contains the greatest element
+
+    Only supports comparable data.
+    A priority queue forms a queue where the elements are ordered based on a comparator, ascending or descending or something
+        like that, and then
+
+
+
+Linked List - is simply a list that is ordered
+
+    
+    (Neither one of the blockingqueues can have null operations done to them)
+ArrayBlockingQueue - 
+
+PriorityBlockingQueue - A threadsafe alternative since linkedlist and priorityque are not threadsafe.
+
+
+
+------------------------------------------------------------------------------------------------------------
+SET
+
+
+    Set is an interface that the below three use.
+
+    SET has the following methods: .add(), .addAll(collection), .clear(), .contains(), .containsAll(collection), .equals(), .hashCode(), .isEmpty(), 
+                                    .iterator(), .remove(), removeAll(collection), retainAll(collection), .size(), .toArray(), toArray(T[]), you
+                                    specifify waht type of Array.
+
+                                    You don't have to worry about overlapping or redundency with ANY of these, and that's the whole point, we use them  
+                                    like a filter.
+
+    
+    SortedSet interface is used for TreeSet and has the following methods:
+        .comparator(), returns the comparator that the treeset has been using, or null if none was supplied and it defaulted to ascending.
+        .first() returns the first element in the set, the lowest if it was sorted by ascending order.
+        headSet(E), returns all the elements that are less than e
+        subSet(E,E), returns the elements in between the two input elements, inclusive of one, exclusive of the other.
+        tailSet(E), returns the elements that are greater than or equal to the input element E.
+
+    Sets will overwrite duplicate values, so it won't return any duplicate values, so it's a good way to SORT OUT duplicate values.  
+
     Sets are not thread safe, they must be externally synchronized if they are used in a multithreading environment.
 
+        The below three are all implementations of the Set interface:
 
-
-The below three are all implementations of the Set interface:
+    Hashing is used because it somehow makes the amount of time to do operations very even, as opposed to if
+        hashing were not used.
 
     HashSet - general purpose lowest resource intensive set, internally uses a hashmap for storing objects.
-        Good for when you want to store unique objects but nothing else matters.
-        O(1) for everything.
+        Good for holding a bunch of values and sorting out the duplicate ones, and giving access to the set methods, and thats pretty much it.
+            It's the basic least resource intensive, cheapo set.  The Hash is to make the time to perform operations close to identical.
+            O(1) for everything, allows a maximum of one null element.
 
-    LinkedHashSet - Will maintain it's insertion order, hair slower than HashSet.  Still pretty much O(1).
+    LinkedHashSet - Use it when you want to maintain insertion order, probably because you want to read the element out by their insertion order,
+             but you still want to cut out any duplicates.  It's basically a hashtable with a linkedlist running through it.
+        Only difference is that it will maintain it's insertion order, hair slower than HashSet. Uses LinkedHashMap internally. Still pretty much O(1).
+        
+    TreeSet - is used for sorting the elements given to it, so that when we pull them back out, they are sorted, but still cannot have duplicate values.
+        It is implemented using TreeMap.  TreeSet sorts the elements given to it, but it has O(log(n)).
+        It arranges the elements in order based on the comparator given to it, the default order is ascending.
 
 
 
-    TreeSet - used for sorting, implemented using TreeMap.
+A HashSet is called a HashSet because hashing is indeed important to its functionality. Operations like contains(Object) (arguab
+ly the most important method in a Set) and remove(Object) are able to work in constant time by making use of the hash code of the object
+ (by way of HashMap)
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
+ A Sorted-set a set that further provides a total ordering on its elements.
+
+
+There are TWO main types of sets:   HashSet and TreeSet.
+A HashSet is just the regular basic simple Set, it's just called a HashSet because the values are hashed, so that the operations
+are all relatively time equal.
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Big O is analysis of an algorithms efficiency.
 Big O is in terms of input size N.
@@ -77,19 +226,7 @@ will take, that is called O(n).
 Big O measure how well a computer algorithm scales as the amount of input/load increases.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Other stuff to look up:
 
@@ -100,7 +237,7 @@ Java is only pass by value?
 class Car implements Vehicle{   // Where Person is the interface
 
 }
-class Crocodile estends Reptile {
+class Crocodile extends Reptile {
 
 }
 
@@ -113,3 +250,14 @@ class Crocodile estends Reptile {
 
 class implements interface.
 (Child-class) extends (Parent-class)
+
+
+
+
+
+https://docs.oracle.com/javase/8/docs/api/java/lang/package-tree.html
+
+
+
+All the available Java 8 packages, including java.lang which is automatically imported in all java programs:
+https://docs.oracle.com/javase/8/docs/api/index.html
