@@ -1,0 +1,779 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Verdana-Bold;\f2\fnil\fcharset0 Verdana;
+\f3\fswiss\fcharset0 Arial-BoldMT;\f4\fswiss\fcharset0 ArialMT;\f5\fmodern\fcharset0 Courier;
+\f6\fnil\fcharset0 Monaco;\f7\froman\fcharset0 Times-Bold;\f8\froman\fcharset0 Times-Roman;
+\f9\froman\fcharset0 Times-Italic;\f10\fnil\fcharset0 TrebuchetMS;\f11\fnil\fcharset0 Menlo-Regular;
+\f12\fswiss\fcharset0 Arial-ItalicMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red38\green38\blue38;
+\red0\green0\blue109;\red109\green109\blue109;\red26\green26\blue26;\red18\green139\blue2;\red1\green32\blue135;
+\red26\green26\blue26;\red27\green29\blue31;\red235\green236\blue237;\red8\green69\blue135;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c20000\c20000\c20000;
+\cssrgb\c0\c0\c50196;\cssrgb\c50196\c50196\c50196;\cssrgb\c13333\c13333\c13333;\cssrgb\c0\c60000\c0;\cssrgb\c0\c20000\c60000;
+\cssrgb\c13333\c13333\c13333;\cssrgb\c14118\c15294\c16078;\cssrgb\c93725\c94118\c94510;\cssrgb\c0\c34902\c60000;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid1\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\margl1440\margr1440\vieww25900\viewh13380\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 ThreadSafe means that if we have multiple threads running, and two threads try to access a data structure at the same time, the data structure will accept the first thread, let the first thread do what it needs to do, but not let the second thread in until the first thread is done, because if the threads try to access the same bit of memory in the computer, that is a problem.\
+Threadsafe means it avoids letting two threads access the same memory bit, usually buy responding to the threads one at a time sequentially.\
+\
+Not thread safe means it is not by default set up to serve more than one thread, and if we don\'92t control it then multiple threads could access it at the same time and cause a crash.\
+\
+Another word for thread safe is \'93synchronized\'94 in that it keeps the threads and the operations synchronized in such a way that they won\'92t interfere with each other.
+\f1\b\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl320\sa260\partightenfactor0
+\cf2 \
+Operator
+\f2\b0 \'a0in java is a symbol that is used to perform operations. For example: +, -, *, / etc.\
+\
+There are many types of operators in java which are given below:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl420\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+Unary Operator,\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+Arithmetic Operator,\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+Shift Operator,\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+Relational Operator,\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+Bitwise Operator,\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+Logical Operator,\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+Ternary Operator and\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+Assignment Operator.\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\
+\pard\pardeftab720\sl460\sa268\partightenfactor0
+
+\f3\b\fs40 \cf4 \expnd0\expndtw0\kerning0
+Summary of Operators\
+\pard\pardeftab720\sl300\sa256\partightenfactor0
+
+\f4\b0\fs25\fsmilli12800 \cf2 The following quick reference summarizes the operators supported by the Java programming language.\
+\pard\pardeftab720\sl400\sa282\partightenfactor0
+
+\f3\b\fs34 \cf4 Simple Assignment Operator\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f5\b0\fs24 \cf2 =       Simple assignment operator\
+\pard\pardeftab720\sl400\sa282\partightenfactor0
+
+\f3\b\fs34 \cf4 Arithmetic Operators\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f5\b0\fs24 \cf2 +       Additive operator (also used\
+        for String concatenation)\
+-       Subtraction operator\
+*       Multiplication operator\
+/       Division operator\
+%       Remainder operator\
+\pard\pardeftab720\sl400\sa282\partightenfactor0
+
+\f3\b\fs34 \cf4 Unary Operators\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f5\b0\fs24 \cf2 +       Unary plus operator; indicates\
+        positive value (numbers are \
+        positive without this, however)\
+-       Unary minus operator; negates\
+        an expression\
+++      Increment operator; increments\
+        a value by 1\
+--      Decrement operator; decrements\
+        a value by 1\
+!       Logical complement operator;\
+        inverts the value of a boolean\
+\pard\pardeftab720\sl400\sa282\partightenfactor0
+
+\f3\b\fs34 \cf4 Equality and Relational Operators\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f5\b0\fs24 \cf2 ==      Equal to\
+!=      Not equal to\
+>       Greater than\
+>=      Greater than or equal to\
+<       Less than\
+<=      Less than or equal to\
+\pard\pardeftab720\sl400\sa282\partightenfactor0
+
+\f3\b\fs34 \cf4 Conditional Operators\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f5\b0\fs24 \cf2 &&      Conditional-AND\
+||      Conditional-OR\
+?:      Ternary (shorthand for \
+        
+\f6 if-then-else
+\f5  statement)\
+\pard\pardeftab720\sl400\sa282\partightenfactor0
+
+\f3\b\fs34 \cf4 Type Comparison Operator\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f5\b0\fs24 \cf2 instanceof      Compares an object to \
+                a specified type \
+\pard\pardeftab720\sl400\sa282\partightenfactor0
+
+\f3\b\fs34 \cf4 Bitwise and Bit Shift Operators\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f5\b0\fs24 \cf2 ~       Unary bitwise complement\
+<<      Signed left shift\
+>>      Signed right shift\
+>>>     Unsigned right shift\
+&       Bitwise AND\
+^       Bitwise exclusive OR\
+|       Bitwise inclusive OR\
+\
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+\
+\pard\pardeftab720\sl440\sa298\partightenfactor0
+
+\f7\b\fs36 \cf5 Java Operator Precedence Table\cf2 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrs\brdrw20\brdrcf6 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalc \clshdrawnil \clwWidth1155\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth986\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3672\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1306\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\fs24 \cf2 Precedence\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 Operator\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 Type\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 Associativity\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalc \clshdrawnil \clwWidth1155\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth986\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3672\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1306\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f8\b0 \cf2 15\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 ()\
+[]\
+\'b7\cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 Parentheses\
+Array subscript\
+Member selection\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 Left to Right\
+\pard\intbl\itap1\pardeftab720\sl280\sa240\qc\partightenfactor0
+\cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalc \clshdrawnil \clwWidth1155\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth986\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3672\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1306\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 14\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 ++\
+--\cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 Unary post-increment\
+Unary post-decrement\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 Right to left\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalc \clshdrawnil \clwWidth1155\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth986\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3672\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1306\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 13\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 ++\
+--\
++\
+-\
+!\
+~\
+(\'a0
+\f9\i type
+\f8\i0 \'a0)\cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 Unary pre-increment\
+Unary pre-decrement\
+Unary plus\
+Unary minus\
+Unary logical negation\
+Unary bitwise complement\
+Unary type cast\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 Right to left\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalc \clshdrawnil \clwWidth1155\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth986\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3672\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1306\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 12\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 *\'a0\
+/\'a0\
+%\cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 Multiplication\
+Division\
+Modulus\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 Left to right\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalc \clshdrawnil \clwWidth1155\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth986\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3672\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1306\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 11\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 +\
+-\cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 Addition\
+Subtraction\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 Left to right\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalc \clshdrawnil \clwWidth1155\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth986\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3672\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1306\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 10\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 <<\
+>>\
+>>>\cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 Bitwise left shift\
+Bitwise right shift with sign extension\
+Bitwise right shift with zero extension\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 Left to right\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalc \clshdrawnil \clwWidth1155\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth986\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3672\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1306\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 9\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 <\
+<=\
+>\
+>=\
+instanceof\cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 Relational less than\
+Relational less than or equal\
+Relational greater than\
+Relational greater than or equal\
+Type comparison (objects only)\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 Left to right\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalc \clshdrawnil \clwWidth1155\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth986\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3672\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1306\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 8\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 ==\
+!=\cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 Relational is equal to\
+Relational is not equal to\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 Left to right\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalc \clshdrawnil \clwWidth1155\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth986\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3672\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1306\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 7\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 &\cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 Bitwise AND\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 Left to right\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalc \clshdrawnil \clwWidth1155\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth986\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3672\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1306\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 6\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 ^\cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 Bitwise exclusive OR\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 Left to right\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalc \clshdrawnil \clwWidth1155\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth986\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3672\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1306\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 5\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 |\cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 Bitwise inclusive OR\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 Left to right\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalc \clshdrawnil \clwWidth1155\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth986\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3672\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1306\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 4\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 &&\cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 Logical AND\
+\pard\intbl\itap1\pardeftab720\sl280\sa240\partightenfactor0
+\cf2 \cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 Left to right\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalc \clshdrawnil \clwWidth1155\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth986\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3672\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1306\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 3\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 ||\cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 Logical OR\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 Left to right\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalc \clshdrawnil \clwWidth1155\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth986\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3672\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1306\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 2\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 ? :\cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 Ternary conditional\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 Right to left\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrs\brdrw20\brdrcf6 \trbrdrb\brdrs\brdrw20\brdrcf6 \trbrdrr\brdrs\brdrw20\brdrcf6 
+\clvertalc \clshdrawnil \clwWidth1155\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth986\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth3672\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth1306\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrs\brdrw20\brdrcf6 \clbrdrl\brdrs\brdrw20\brdrcf6 \clbrdrb\brdrs\brdrw20\brdrcf6 \clbrdrr\brdrs\brdrw20\brdrcf6 \clpadt40 \clpadl40 \clpadb40 \clpadr40 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 1\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 =\
++=\
+-=\
+*=\
+/=\
+%=\cell 
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+\cf2 Assignment\
+Addition assignment\
+Subtraction assignment\
+Multiplication assignment\
+Division assignment\
+Modulus assignment\cell 
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+\cf2 Right to left\cell \lastrow\row
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+
+\f9\i \cf2 \
+\
+Larger number means higher preced
+\f8\i0 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f5 \cf2 \
+\
+\
+\
+\
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\b\fs32 \cf7 \cb3 \outl0\strokewidth0 \strokec7 Reference
+\f4\b0 \'a0variables are not pointers but a handle to the object which is created in heap memory. The main difference \
+between\'a0
+\f3\b primitive and reference type
+\f4\b0 \'a0is that\'a0
+\f3\b primitive type
+\f4\b0 \'a0always has a value, it can never be null but\'a0
+\f3\b reference type
+\f4\b0 \'a0can be null, \
+
+\fs28 which denotes the\'a0absence of value.\
+\
+\pard\pardeftab720\sl220\partightenfactor0
+
+\f10 \cf2 \strokec2 If you try to\'a0\cf8 \cb1 \ul \ulc8 \strokec8 access\cf2 \cb3 \ulnone \strokec2 \'a0any field or invoke a method on a null reference, you will be greeted with NullPointerException in Java.\cb1 \
+\
+Read more:\'a0{\field{\*\fldinst{HYPERLINK "https://javarevisited.blogspot.com/2015/09/difference-between-primitive-and-reference-variable-java.html#ixzz5qSQQifrs"}}{\fldrslt \cf9 \ul \ulc9 \strokec9 https://javarevisited.blogspot.com/2015/09/difference-between-primitive-and-reference-variable-java.html#ixzz5qSQQifrs}}\cf9 \ul \ulc9 \strokec9 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f4\fs32 \cf10 \cb3 \ulnone \outl0\strokewidth0  ArrayList is essentially not that different from Array except that it automatically resizes when when it needs to be larger.  However, making the array larger,\
+Which is actually making a new array will take O(n) time.  Also adding or removing element in the array actually moves all the other elements, which is\
+Probably the most disadvantageous part.\
+\
++++++++++++++++++++++++++\
+\
+\pard\pardeftab720\sl300\sa300\partightenfactor0
+
+\f11\fs26 \cf11 \cb12 \outl0\strokewidth0 \strokec11 LinkedList
+\f4\fs30 \cb3 \'a0and\'a0
+\f11\fs26 \cb12 ArrayList
+\f4\fs30 \cb3 \'a0are two different implementations of the List interface.\'a0
+\f11\fs26 \cb12 LinkedList
+\f4\fs30 \cb3 implements it with a doubly-linked list.\'a0
+\f11\fs26 \cb12 ArrayList
+\f4\fs30 \cb3 \'a0implements it with a dynamically re-sizing array.\
+\pard\pardeftab720\sl340\sa300\partightenfactor0
+\cf11 As with standard linked list and array operations, the various methods will have different algorithmic runtimes.\
+For\'a0{\field{\*\fldinst{HYPERLINK "http://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html"}}{\fldrslt 
+\f11\fs26 \cf13 \cb12 \ul \ulc13 \strokec13 LinkedList<E>}}\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl300\sa150\partightenfactor0
+\ls2\ilvl0
+\f11\fs26 \cf11 \cb12 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 get(int index)
+\f4\fs30 \cb3 \'a0is\'a0
+\f12\i O(n)
+\f4\i0 \'a0(with\'a0
+\f12\i n/4
+\f4\i0 \'a0steps on average)\cb1 \
+\ls2\ilvl0
+\f11\fs26 \cb12 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 add(E element)
+\f4\fs30 \cb3 \'a0is\'a0
+\f12\i O(1)
+\f4\i0 \cb1 \
+\ls2\ilvl0
+\f11\fs26 \cb12 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 add(int index, E element)
+\f4\fs30 \cb3 \'a0is\'a0
+\f12\i O(n)
+\f4\i0 \'a0(with\'a0
+\f12\i n/4
+\f4\i0 \'a0steps on average), but\'a0
+\f12\i O(1)
+\f4\i0 \'a0when\'a0
+\f11\fs26 \cb12 index = 0
+\f4\fs30 \cb3 <--- main benefit of\'a0
+\f11\fs26 \cb12 LinkedList<E>
+\f4\fs30 \cb1 \
+\ls2\ilvl0
+\f11\fs26 \cb12 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 remove(int index)
+\f4\fs30 \cb3 \'a0is\'a0
+\f12\i O(n)
+\f4\i0 \'a0(with\'a0
+\f12\i n/4
+\f4\i0 \'a0steps on average)\cb1 \
+\ls2\ilvl0
+\f11\fs26 \cb12 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 Iterator.remove()
+\f4\fs30 \cb3 \'a0is\'a0
+\f12\i O(1)
+\f4\i0 . <--- main benefit of\'a0
+\f11\fs26 \cb12 LinkedList<E>
+\f4\fs30 \cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl300\partightenfactor0
+\ls2\ilvl0
+\f11\fs26 \cf11 \cb12 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 ListIterator.add(E element)
+\f4\fs30 \cb3 \'a0is\'a0
+\f12\i O(1)
+\f4\i0 \'a0This is one of the main benefits of\'a0
+\f11\fs26 \cb12 LinkedList<E>
+\f4\fs30 \cb1 \
+\pard\pardeftab720\sl240\sa300\partightenfactor0
+
+\fs24 \cf11 \cb3 \super Note: Many of the operations need\'a0
+\f12\i n/4
+\f4\i0 \'a0steps on average,\'a0
+\f12\i constant
+\f4\i0 \'a0number of steps in the best case (e.g. index = 0), and\'a0
+\f12\i n/2
+\f4\i0 steps in worst case (middle of list)
+\fs30 \nosupersub \
+\pard\pardeftab720\sl340\sa300\partightenfactor0
+\cf11 For\'a0{\field{\*\fldinst{HYPERLINK "http://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html"}}{\fldrslt 
+\f11\fs26 \cf13 \cb12 \ul \ulc13 \strokec13 ArrayList<E>}}\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl300\sa150\partightenfactor0
+\ls3\ilvl0
+\f11\fs26 \cf11 \cb12 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 get(int index)
+\f4\fs30 \cb3 \'a0is\'a0
+\f12\i O(1)
+\f4\i0 \'a0<--- main benefit of\'a0
+\f11\fs26 \cb12 ArrayList<E>
+\f4\fs30 \cb1 \
+\ls3\ilvl0
+\f11\fs26 \cb12 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 add(E element)
+\f4\fs30 \cb3 \'a0is\'a0
+\f12\i O(1)
+\f4\i0 \'a0amortized, but\'a0
+\f12\i O(n)
+\f4\i0 \'a0worst-case since the array must be resized and copied\cb1 \
+\ls3\ilvl0
+\f11\fs26 \cb12 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 add(int index, E element)
+\f4\fs30 \cb3 \'a0is\'a0
+\f12\i O(n)
+\f4\i0 \'a0(with\'a0
+\f12\i n/2
+\f4\i0 \'a0steps on average)\cb1 \
+\ls3\ilvl0
+\f11\fs26 \cb12 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 remove(int index)
+\f4\fs30 \cb3 \'a0is\'a0
+\f12\i O(n)
+\f4\i0 \'a0(with\'a0
+\f12\i n/2
+\f4\i0 \'a0steps on average)\cb1 \
+\ls3\ilvl0
+\f11\fs26 \cb12 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 Iterator.remove()
+\f4\fs30 \cb3 \'a0is\'a0
+\f12\i O(n)
+\f4\i0 \'a0(with\'a0
+\f12\i n/2
+\f4\i0 \'a0steps on average)\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl300\partightenfactor0
+\ls3\ilvl0
+\f11\fs26 \cf11 \cb12 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec11 ListIterator.add(E element)
+\f4\fs30 \cb3 \'a0is\'a0
+\f12\i O(n)
+\f4\i0 \'a0(with\'a0
+\f12\i n/2
+\f4\i0 \'a0steps on average)\cb1 \
+\pard\pardeftab720\sl240\sa300\partightenfactor0
+
+\fs24 \cf11 \cb3 \super Note: Many of the operations need\'a0
+\f12\i n/2
+\f4\i0 \'a0steps on average,\'a0
+\f12\i constant
+\f4\i0 \'a0number of steps in the best case (end of list),\'a0
+\f12\i n
+\f4\i0 \'a0steps in the worst case (start of list)
+\fs30 \nosupersub \
+\pard\pardeftab720\sl300\sa300\partightenfactor0
+
+\f11\fs26 \cf11 \cb12 LinkedList<E>
+\f4\fs30 \cb3 \'a0allows for constant-time insertions or removals\'a0
+\f12\i using iterators
+\f4\i0 , but only sequential access of elements. In other words, you can walk the list forwards or backwards, but finding a position in the list takes time proportional to the size of the list. Javadoc says\'a0
+\f12\i "operations that index into the list will traverse the list from the beginning or the end, whichever is closer"
+\f4\i0 , so those methods are\'a0
+\f12\i O(n)
+\f4\i0 \'a0(
+\f12\i n/4
+\f4\i0 \'a0steps) on average, though\'a0
+\f12\i O(1)
+\f4\i0 \'a0for\'a0
+\f11\fs26 \cb12 index = 0
+\f4\fs30 \cb3 .\
+
+\f11\fs26 \cb12 ArrayList<E>
+\f4\fs30 \cb3 , on the other hand, allow fast random read access, so you can grab any element in constant time. But adding or removing from anywhere but the end requires shifting all the latter elements over, either to make an opening or fill the gap. Also, if you add more elements than the capacity of the underlying array, a new array (1.5 times the size) is allocated, and the old array is copied to the new one, so adding to an\'a0
+\f11\fs26 \cb12 ArrayList
+\f4\fs30 \cb3 \'a0is\'a0
+\f12\i O(n)
+\f4\i0 \'a0in the worst case but constant on average.\
+\pard\pardeftab720\sl340\sa300\partightenfactor0
+\cf11 So depending on the operations you intend to do, you should choose the implementations accordingly. Iterating over either kind of List is practically equally cheap. (Iterating over an\'a0
+\f11\fs26 \cb12 ArrayList
+\f4\fs30 \cb3 \'a0is technically faster, but unless you're doing something really performance-sensitive, you shouldn't worry about this -- they're both constants.)\
+The main benefits of using a\'a0
+\f11\fs26 \cb12 LinkedList
+\f4\fs30 \cb3 \'a0arise when you re-use existing iterators to insert and remove elements. These operations can then be done in\'a0
+\f12\i O(1)
+\f4\i0 \'a0by changing the list locally only. In an array list, the remainder of the array needs to be\'a0
+\f12\i moved
+\f4\i0 \'a0(i.e. copied). On the other side, seeking in a\'a0
+\f11\fs26 \cb12 LinkedList
+\f4\fs30 \cb3 \'a0means following the links in\'a0
+\f12\i O(n)
+\f4\i0 \'a0(
+\f12\i n/2
+\f4\i0 \'a0steps) for worst case, whereas in an\'a0
+\f11\fs26 \cb12 ArrayList
+\f4\fs30 \cb3 \'a0the desired position can be computed mathematically and accessed in\'a0
+\f12\i O(1)
+\f4\i0 .\
+Another benefit of using a\'a0
+\f11\fs26 \cb12 LinkedList
+\f4\fs30 \cb3 \'a0arise when you add or remove from the head of the list, since those operations are\'a0
+\f12\i O(1)
+\f4\i0 , while they are\'a0
+\f12\i O(n)
+\f4\i0 \'a0for\'a0
+\f11\fs26 \cb12 ArrayList
+\f4\fs30 \cb3 . Note that\'a0
+\f11\fs26 \cb12 ArrayDeque
+\f4\fs30 \cb3 \'a0may be a good alternative to\'a0
+\f11\fs26 \cb12 LinkedList
+\f4\fs30 \cb3 \'a0for adding and removing from the head, but it is not a\'a0
+\f11\fs26 \cb12 List
+\f4\fs30 \cb3 .\
+Also, if you have large lists, keep in mind that memory usage is also different. Each element of a\'a0
+\f11\fs26 \cb12 LinkedList
+\f4\fs30 \cb3 \'a0has more overhead since pointers to the next and previous elements are also stored.\'a0
+\f11\fs26 \cb12 ArrayLists
+\f4\fs30 \cb3 \'a0don't have this overhead. However,\'a0
+\f11\fs26 \cb12 ArrayLists
+\f4\fs30 \cb3 \'a0take up as much memory as is allocated for the capacity, regardless of whether elements have actually been added.\
+The default initial capacity of an\'a0
+\f11\fs26 \cb12 ArrayList
+\f4\fs30 \cb3 \'a0is pretty small (10 from Java 1.4 - 1.8). But since the underlying implementation is an array, the array must be resized if you add a lot of elements. To avoid the high cost of resizing when you know you're going to add a lot of elements, construct the\'a0
+\f11\fs26 \cb12 ArrayList
+\f4\fs30 \cb3 \'a0with a higher initial capacity.  An arraylist can indeed get bigger when it needs to store more elements, it is rather resource intensive, so it is best to initialize the array list to the correct size when instantiating it, if at all possible.\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f10\fs28 \cf2 \cb1 \outl0\strokewidth0 \
+A linked list has pointers that point both forward and backward, whereas a list only has pointers that point forward.  So with a list, to get to an element in the middler, the iterator only moves forward, so\
+If the iterator is barely past where it is trying to go, then it has to do an entire loop of all the elements to get to the spot behind it, since it only goes one way.\
+A LinkedList can go forward OR backward, so a linked-list is more effective if you\'92re commonly trying to get to elements in the middle.\
+\
+LinkedLists don\'92t have great performance, but somehow the performance is always about the same.  ArrayLists are usually faster than linkelists but don\'92t have any guarantee attached to them, therefore in some unexpected situations they bog down.\
+\
+References are either 32bit or 64 bit, depending on the machine, even when they\'92re null.\
+\
+\
+Maps are technically not part of collections, therefore they behave slightly differently.\
+\
+Maps cannot contain duplicate keys and each key cannot lead to more than one value.  (The values don\'92t really have any restrictions though, they can be whatever)\
+\
+A HashMap is the most basic map, it is nothing more than a basic map, lowest resources.  It is only called Hash because the input are hashed in order to make the time to perform\
+Operations similar across the board.\
+\
+HashMap, because it is the most basic map, does not have any predictable \'93order\'94 to it, since the only reliable connections are from the keys to their specific values.\
+\
+There are two map interfaces in java: Map and SortedMap, and there are three classes:  HashMap,  TreeMap and LinkedHashMap.\
+\
+HashMaps, are good for when we simply want to connect things together, in pairs, like a dictionary with a word and it\'92s definition, or a city to its zip code, or an employee to their manager.\
+\
+A HashMap is interfaced with the Map since it\'92s certiainly not sorted:\
+Map has a number of different methods:\
+\
+	.clear()\
+	.containsValue(object value)\
+	.clone( object )\
+	.isEmpty()\
+	.size()\
+	.put( key, value)\
+	.putAll(Map map)\
+	.remove(Object key)\
+	.get( Object, key)\
+	containsKey(object Key)\
+	.keySet() returns the set view containing all the keys\
+	.entrySet() returns the set view containing all of the values.\
+	.values() returns a collection view of the values in the map (even though it\'92s not actually a part of collections)\
+\
+A HashMap is the basic low-level map, it doesn\'92t do anything fancy ONLY basic basic things like get, put, is empty, putAll, containsKey, .keySet, entrySet, clone\
+\
+HashMap doesn\'92t have any methods to do transformations upon ALL of the pairs.\
+LinkedHashMAp DOES, have methods to do transformations upon all of the pairs, or all of the keys, or all of the values.\
+\
+LinkedHashMap is just like Map, except that it has the additional feature of maintaining the order of elements inserted into it.\
+A LinkedHasMap can be treated just like a plain HashMap with it\'92s keys and values, OR it can be used more like a list, since it \'93remembers\'94 insertion order.\
+\
+LinkedHashMap remembers insertion order, and we can apply functions to \'93all of the keys\'94 or \'93all of the values\'94 or both.  That\'92s the main difference between plain HashMap and LinkedHashMap.\
+\
+In addition to the regular MAP methods, a linkedHashMap also has:\
+\
+.forEach( BiConsumer<K,V> action ). Does an action on each pair until all the pairs have been acted upon.\
+\
+.getOrDefault(Object key, default value) same as regular get except it returns the given default value if the key does not have an assigned concrete value.\
+\
+.removeEldestEntry( map.Entry<k,V> function) \
+\
+.replaceAll(BiFunction<k,v> function).   This method applies a function to all of the values and saves the new values obviously.\
+\
+\
+\
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 TreeMap maintains ascending key order by default, or the order based on a given comparator, as opposed to LInkedHashMap which only maintains insertion order, or HashMap which does not maintain any order whatsoever.\cf2 \
+TreeMap does not allow any null keys, but can have multiple null values.  A NPE is thrown if we try to give it a null key.\
+TreeMap is non-synchronized.\
+\
+Regular HashMap is just unique keys, that\'92s it, LinkedHashMap maintains insertion order as well, so that we can apply a function to all of the keys, or all of the values and guarantee that it hit all of them, a treeMap sorts the entries by key value, it defaults to asencding but you can give it other comparators as well, so its\'92 based on they value, as opposed to a LinkHashMap which is based on the insertion order, or regular HashMap which doesn\'92t have any guaranteed order or guaranteed order at all, or any built in way to apply a function to all of the keys or all of the values.\
+\
+A MAP is like a bag full of keys connected to values, like little double ended things,\
+\
+A SET is like a bag full of single-ended things, values, and that\'92s all there is to it, just a bag of values.  Because it\'92s just a bag, not double ended, we will end up not having any duplicate values, because duplicate values would imply that we know how many, and that would be another piece of data.  Sets will \'93cut out\'94 any duplicate values, because it\'92s either in the set or it\'92s not, and it doesn\'92t; matter how many times you add it to the set, if it\'92s already there, and it doesn\'92t matter how many times you remove it from the Set, if its already NOT there.  You can add an element to a set infinite times without causing any exceptions or errors, you can remove an element from a set, infinite times, without causing any exceptions or errors.  This is the backbone of the set, it\'92s not that \'93A set cannot contain duplicate value, so if we try to give it duplicate values, it will cause an exception\'85no, it\'92s the exact opposite, we GIVE IT duplicate values to LET IT sort them out.  Most of the rules of a set, are not because we know to know ahead of time and sort things out ahed of time to avoid causing a problem, most of the rules of set are the OPPOSITE, we purposely want to GIVE IT THAT, to ALLOW IT TO SORT THEM OUT FOR US!!!\
+\
+HashSet is the most basic set that there is.\
+\
+LInkedHashSet is like a HashSet except that it also remembers insertion order.\
+\
+TreeSet is sorted by ascending order or by the comparator given to it, as opposed to LInkedHashSet which only remembers insertion order, or HashSet, which doesn\'92t have any guaranteed order at all.\
+\
+Array is just a regular array provided by the java.lang package.  A regular array must contain all of the same type of element, and once the size is declared it cannot be grown or shrank.\
+\
+An ArrayList comes from the collections framework from the java.util package, the main difference is that an ArrayList automatically gets bigger whenever it needs to store more elements. It grows by 50%.\
+\
+A LIST is an ordered sequence of elements, whereas a SET is like a grab-bag of distinct elements, each one is distinct, but there is no order.\
+\
+With a LinkedHashset, or LinkedHashMap, we generally insert things one at a time, so that\'92s why we say that it \'93remembers the order of insertion\'94, whereas with an ArrayList or Vector, or LinkedList, we generally insert things all at once, or in chunks, like sums = [4, 5, 43, 454, 34, 26], that\'92s why we don\'92t talk about order of insertion with lists, even though I suppose the different chunks might follow order of insertion, in terms of there index values, I\'92m not completely sure.\
+\
+We mostly only say \'93order of insertion\'94 for things that we insert elements or values, or key-values into, one at a time.  For things where we insert multiple at a time, we don\'92t really use that term, we talk about the index value.  The order WITHIN the square brackets still makes a difference, but we don\'92t really say \'93order of insertion\'94 since they\'92re not explicitly inserted one at a time.\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\pardeftab720\sl220\partightenfactor0
+
+\f5\fs24 \cf2 \
+}
